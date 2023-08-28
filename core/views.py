@@ -1,6 +1,6 @@
 from django.views.generic import TemplateView
 
-from core.models import Funcionario
+from core.models import Funcionario, Servico
 
 
 class IndexView(TemplateView):
@@ -8,6 +8,7 @@ class IndexView(TemplateView):
 
     def get_context_data(self, **kwargs):
         contexto = super().get_context_data(**kwargs)
-        contexto['funcionarios'] = Funcionario.objects.all()
+        contexto['funcionarios'] = Funcionario.objects.order_by('?').all()
+        contexto['servicos'] = Servico.objects.filter(ativo=True)
         return contexto
 
