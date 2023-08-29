@@ -21,7 +21,7 @@
                         <p class="mbr-text mbr-fonts-style mt-3 display-7">{{ s.descricao|truncatewords:7 }}</p>
                     </div>
                     <div class="mbr-section-btn item-footer mt-2">
-                        <a href="" class="btn btn-primary item-btn display-7" target="_blank">Saiba mais
+                        <a href="{% url 'detalheservico' s.id %}" class="btn btn-primary item-btn display-7" target="_blank">Saiba mais
                             &gt;</a></div>
                 </div>
             </div>
