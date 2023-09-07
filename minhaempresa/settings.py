@@ -141,7 +141,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'localhost'
 EMAIL_HOST_USER = 'contato@minhaempresa2023.com.br'
-EMAIL_PORT = 587
 EMAIL_USE_TSL = True
 EMAIL_HOST_PASSWORD = 'suasenhadeemail'
 DEFAULT_FROM_EMAIL = 'contato@minhaempresa2023.com.br'
